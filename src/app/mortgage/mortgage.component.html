@@ -1,0 +1,12 @@
+<p>This page will calculate the return of your
+    mortgage after a given number of years</p>
+    <!--Input fields-->
+    Years: <input [(ngModel)]="years" type="number"><br />
+    Amount: <input [(ngModel)]="amount" type="number">
+    <br><br>
+    <!--Button to calculate total based on the values in the input fields-->
+    <button (click)="calaulateinterest()">
+    Calculate Total</button>
+    <hr>
+    <!--{{ }} used for two way binding-->
+    {{Total}}
